@@ -36,7 +36,7 @@ plugin.exports = class Plugin implements BookStore {
    * 静态属性 VERSION  必填
    * 插件版本  用于显示
    */
-  public static readonly VERSION: string = '1.0.0';
+  public static readonly VERSION: string = '1.1';
   /**
    * 静态属性 VERSION_CODE  必填
    * 插件版本代码  用于比较本地插件与静态属性PLUGIN_FILE_URL所指插件的版本号
@@ -46,7 +46,7 @@ plugin.exports = class Plugin implements BookStore {
    * 静态属性 PLUGIN_FILE_URL  必填
    * 插件http、https链接, 如: http://example.com/plugin-template.js
    */
-  public static readonly PLUGIN_FILE_URL: string = 'https://23shu8.net/a.js';
+  public static readonly PLUGIN_FILE_URL: string = 'https://github.com/bg5tue/readcat-plugin/raw/refs/heads/main/dist/23shu8_bookstore.js';
   /**
    * 静态属性 BASE_URL  书源、书城类必填
    * 插件请求目标链接
@@ -60,7 +60,7 @@ plugin.exports = class Plugin implements BookStore {
     maxPageNumber: {
       label: '最大页数',
       type: 'number',
-      default: 5,
+      default: 3,
     },
   };
   /**
